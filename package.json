@@ -1,0 +1,35 @@
+{
+  "name": "paperclip-plugin-notification-sound",
+  "version": "1.0.3",
+  "description": "Paperclip plugin that plays a notification sound when issues change to in_review, blocked, or done",
+  "type": "module",
+  "paperclipPlugin": {
+    "manifest": "dist/paperclip-manifest.mjs"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "paperclip",
+    "paperclip-plugin",
+    "notification",
+    "sound"
+  ],
+  "author": "Service Ranker",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "dependencies": {
+    "@paperclipai/plugin-sdk": "^2026.403.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "esbuild": "^0.20.0",
+    "react": "^18.2.0",
+    "typescript": "^5.4.0"
+  }
+}
